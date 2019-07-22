@@ -25,6 +25,7 @@ export class RolService {
   }
 
   guardarRol(token, rol: Rol): Observable<any> {
+
     const params = JSON.stringify(rol);
     const headers = new HttpHeaders().set('Content-Type', 'application/json').set('token', token);
 

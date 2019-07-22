@@ -32,12 +32,14 @@ export class LoginComponent implements OnInit {
 
       if (!this.identidad || !this.identidad._id) {
         this.estado = 'error';
+        console.log('Error');
       } else {
         localStorage.setItem('identidad', JSON.stringify(this.identidad));
         this.obtenerToken();
       }
-
+      console.log('Se supone que nos vamos a inicio');
       this.router.navigate(['/inicio']);
+      
     }, error => console.log(<any>error));
   }
 
