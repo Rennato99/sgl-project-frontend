@@ -9,7 +9,7 @@ export class UsuarioGuard implements CanActivate {
   canActivate() {
     const identidad = this.userService.obtenerIdentidad();
 
-    if (identidad && identidad.rol === '5d3603886fbe7b87f4e52aeb') {
+    if (identidad && identidad.rol === '5d3611c94c0c93a45ce4bc64') {
       return true;
     } else {
       this.router.navigate(['/login']);
