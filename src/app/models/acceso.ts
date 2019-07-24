@@ -1,11 +1,11 @@
 export class Acceso {
-  constructor(_id = '', date = '', hour = '', user = '', sala = '', typeAccess = '') {
+  constructor(_id = '', date = '', hour = '', user = '', sala = '', type = '') {
     this._id = _id;
     this.date = date;
     this.hour = hour;
     this.user = user;
     this.sala = sala;
-    this.typeAccess = typeAccess;
+    this.type = type;
   }
 
   _id: string;
@@ -13,5 +13,5 @@ export class Acceso {
   hour: string;
   user: string;
   sala: string;
-  typeAccess: string;
+  type: string;
 }

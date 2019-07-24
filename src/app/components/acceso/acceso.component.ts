@@ -26,6 +26,6 @@ export class AccesoComponent implements OnInit {
 
   listarAccesos() {
     this.accesoService.listarAccesos(this.token)
-    .subscribe(res => this.accesoService.accesos = res.permisos as Acceso[], error => console.log(<any>error));
+    .subscribe(res => this.accesoService.accesos = res.accesos as Acceso[], error => console.log(<any>error));
   }
 }
