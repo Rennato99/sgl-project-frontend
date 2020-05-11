@@ -1,0 +1,18 @@
+version: '3.4'
+
+services:
+  client-angular:
+    image: sgl-project-frontend
+    build: .
+    command: ng serve --host 0.0.0.0
+    volumes:
+      - .:/app  
+    ports:
+      - 4200:4201
+      - 49153:49154
+      - 9876:9877
+      - 49152:49153
+
+
+
+
